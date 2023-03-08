@@ -6,6 +6,7 @@ public class ClassType {
         if (clz.equals(hasType(convert))) return true;
         return clz.isAssignableFrom(convert);
     }
+
     private static Class<?> hasType(Class<?> clz) {
         try {
             if (clz.equals(Boolean.class)) return boolean.class;

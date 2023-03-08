@@ -1,7 +1,6 @@
 package lin.my.Utils;
 
 import java.lang.reflect.Constructor;
-import java.lang.reflect.InvocationTargetException;
 
 public class ConstructorUtils {
     public static Constructor findConstructor(Class clazz) {
@@ -28,16 +27,10 @@ public class ConstructorUtils {
         return null;
     }
 
-    public static <T> T NewInstance(Constructor constructor, Object... objects) {
-        try {
-            return (T) constructor.newInstance(objects);
-        } catch (IllegalAccessException e) {
-            throw new RuntimeException(e);
-        } catch (InstantiationException e) {
-            throw new RuntimeException(e);
-        } catch (InvocationTargetException e) {
-            throw new RuntimeException(e);
-        }
+    public static <T> T NewInstance(Constructor constructor, Object... objects) throws Exception {
+
+        return (T) constructor.newInstance(objects);
+
     }
 
     public static <T> T NewInstance(Class<?> clz, Class<?>[] paramTypes, Object... params) throws Exception {
