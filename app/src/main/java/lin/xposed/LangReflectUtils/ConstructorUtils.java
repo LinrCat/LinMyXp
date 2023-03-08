@@ -1,8 +1,9 @@
-package lin.xposed.Utils;
+package lin.xposed.LangReflectUtils;
 
 import java.lang.reflect.Constructor;
 
 public class ConstructorUtils {
+
     public static Constructor findConstructor(Class clazz) {
         try {
             return clazz.getConstructor();
@@ -28,9 +29,7 @@ public class ConstructorUtils {
     }
 
     public static <T> T NewInstance(Constructor constructor, Object... objects) throws Exception {
-
         return (T) constructor.newInstance(objects);
-
     }
 
     public static <T> T NewInstance(Class<?> clz, Class<?>[] paramTypes, Object... params) throws Exception {
@@ -46,7 +45,7 @@ public class ConstructorUtils {
             con.setAccessible(true);
             return (T) con.newInstance(params);
         }
-        throw new RuntimeException("No Instance for " + clz);
+        throw new RuntimeException("找不到构造方法" + clz);
     }
 
 }

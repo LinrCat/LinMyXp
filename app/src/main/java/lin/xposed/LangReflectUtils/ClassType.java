@@ -1,6 +1,8 @@
-package lin.xposed.Utils;
+package lin.xposed.LangReflectUtils;
 
 public class ClassType {
+
+    //缩小范围匹配字节引用类型
     public static boolean CheckClass(Class<?> clz, Class<?> convert) {
         if (clz.equals(convert)) return true;
         if (clz.equals(hasType(convert))) return true;

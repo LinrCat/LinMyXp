@@ -2,7 +2,7 @@ package lin.xposed;
 
 import de.robv.android.xposed.IXposedHookLoadPackage;
 import de.robv.android.xposed.callbacks.XC_LoadPackage;
-import lin.xposed.Utils.ClassUtils;
+import lin.xposed.LangReflectUtils.ClassUtils;
 
 public class Hook implements IXposedHookLoadPackage {
 
