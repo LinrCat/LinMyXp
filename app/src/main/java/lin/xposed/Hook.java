@@ -1,8 +1,8 @@
-package lin.my;
+package lin.xposed;
 
 import de.robv.android.xposed.IXposedHookLoadPackage;
 import de.robv.android.xposed.callbacks.XC_LoadPackage;
-import lin.my.Utils.ClassUtils;
+import lin.xposed.Utils.ClassUtils;
 
 public class Hook implements IXposedHookLoadPackage {
 

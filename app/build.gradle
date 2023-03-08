@@ -3,10 +3,10 @@ plugins {
 }
 
 android {
-    namespace 'lin.my'
+    namespace 'lin.xposed'
     compileSdk 31
     defaultConfig {
-        applicationId "lin.my"
+        applicationId "lin.xposed"
         minSdk 24
         targetSdk 31
         versionCode 1

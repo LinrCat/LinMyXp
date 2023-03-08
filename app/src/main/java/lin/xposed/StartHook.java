@@ -1,4 +1,4 @@
-package lin.my;
+package lin.xposed;
 
 public class StartHook {
 

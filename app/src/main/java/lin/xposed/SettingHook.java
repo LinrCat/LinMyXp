@@ -1,4 +1,4 @@
-package lin.my;
+package lin.xposed;
 
 import android.app.Activity;
 import android.content.Context;
@@ -7,10 +7,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 import de.robv.android.xposed.XC_MethodHook;
 import de.robv.android.xposed.XposedHelpers;
-import lin.my.Utils.*;
+import lin.xposed.Utils.*;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
@@ -31,7 +30,6 @@ public class SettingHook {
                                 activity = (Activity) param.thisObject;
                             else
                                 activity = MethodUtils.findAndCallMethod(param.thisObject, "getActivity");
-                            Toast.makeText(activity,"huode",Toast.LENGTH_LONG).show();
                             ViewGroup viewGroup = null;
                             //获得片段View-Item类
                             Class clz = ClassUtils.getClass("com.tencent.mobileqq.widget.FormSimpleItem");

@@ -1,4 +1,4 @@
-package lin.my.Utils;
+package lin.xposed.Utils;
 
 public class ClassType {
     public static boolean CheckClass(Class<?> clz, Class<?> convert) {

@@ -1,4 +1,4 @@
-package lin.my;
+package lin.xposed;
 
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;

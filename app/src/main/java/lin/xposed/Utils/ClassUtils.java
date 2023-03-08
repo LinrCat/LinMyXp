@@ -1,4 +1,4 @@
-package lin.my.Utils;
+package lin.xposed.Utils;
 
 import de.robv.android.xposed.XposedBridge;
 import de.robv.android.xposed.callbacks.XC_LoadPackage;
